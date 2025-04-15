@@ -74,7 +74,7 @@
 
 .menu-drop {
   position: absolute;
-  display: none;
+  /* display: none; */
   flex-direction: column;
   /* align-items: center; */
   background-color: #ffffff;
@@ -83,12 +83,14 @@
   left: 198px;
   top: 80px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+  visibility: hidden;
   transition: 0.5s;
+  opacity: 0;
 }
 
 .menu-drop li {
   display: flex;
-  margin: 5px;
+  margin: 8px 2px;
   align-items: center;
   color: hsl(0, 0%, 41%);
 }
@@ -100,7 +102,7 @@
 
 .menu-drop1 {
   position: absolute;
-  display: none;
+  /* display: none; */
   flex-direction: column;
   /* align-items: center; */
   background-color: #ffffff;
@@ -109,7 +111,9 @@
   left: 390px;
   top: 80px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+  visibility: hidden;
   transition: 0.5s;
+  opacity: 0;
 }
 
 .menu-drop1 li {
@@ -130,7 +134,9 @@
 }
 
 .active {
-  display: flex;
+  opacity: 1;
+  visibility: visible; 
+  transition: 0.5s;
 }
 
 .giro {
@@ -179,11 +185,12 @@
 
   .menu-drop {
     position: inherit;
-    /* display: none; */
+    display: none;
     flex-direction: column;
     /* align-items: center; */
     background-color: hsl(0, 0%, 98%);
-    padding: 15px 25px;
+    padding: 10px 25px;
+    gap: 2px;
     border-radius: 10px;
     /* left: 198px; */
     /* top: 80px; */
@@ -192,15 +199,25 @@
 
   .menu-drop1 {
     position: inherit;
-    /* display: none; */
+    display: none;
     flex-direction: column;
     /* align-items: center; */
     background-color: hsl(0, 0%, 98%);
-    padding: 15px 25px;
+    padding: 10px 25px;
     border-radius: 10px;
+    gap: 2px;
     /* left: 390px;
     top: 80px; */
     box-shadow: none;
+    /* visibility: hidden; */
+  }
+
+  .menu-drop.active {
+    display: block;
+  }
+
+  .menu-drop1.active {
+    display: block;
   }
 
   #btn-nav {
