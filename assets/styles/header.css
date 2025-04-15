@@ -1,0 +1,248 @@
+.header {
+  display: flex;
+  margin: 40px 120px 40px 120px;
+  justify-content: space-between;
+  color: hsl(0, 0%, 41%);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 930px;
+}
+
+.header-content {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+/* .nav-items li {
+   padding: 5px;
+} */
+
+.nav-items > li:hover {
+  color: hsl(0, 0%, 8%);
+  transition: 0.3s;
+}
+
+#arrow,
+#arrowTwo {
+  display: inline;
+  margin-left: 5px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 899px;
+}
+
+.button-login {
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 30px;
+  padding: 5px;
+}
+
+.button-login:hover {
+  color: hsl(0, 0%, 8%);
+  transition: 0.3s;
+}
+
+.button-register {
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button-register:hover {
+  border: 2px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+  transition: 0.3s;
+}
+
+.menu-drop {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  left: 198px;
+  top: 80px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+  transition: 0.5s;
+}
+
+.menu-drop li {
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  color: hsl(0, 0%, 41%);
+}
+
+.menu-drop li:hover {
+  color: hsl(0, 0%, 8%);
+  transition: 0.3s;
+}
+
+.menu-drop1 {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 10px;
+  left: 390px;
+  top: 80px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+  transition: 0.5s;
+}
+
+.menu-drop1 li {
+  display: flex;
+  margin: 8px;
+  align-items: center;
+  color: hsl(0, 0%, 41%);
+}
+
+.menu-drop1 li:hover {
+  color: hsl(0, 0%, 8%);
+  transition: 0.3s;
+}
+
+.menu-drop img {
+  display: inline;
+  margin-right: 15px;
+}
+
+.active {
+  display: flex;
+}
+
+.giro {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+#btn-nav {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 240px;
+    top: 1px;
+    right: 1px;
+    height: 920px;
+    align-items: normal;
+    gap: 15px;
+    padding-top: 100px;
+    padding-left: 20px;
+    background-color: hsl(0, 0%, 98%);
+  }
+
+  .nav-items.active {
+    display: flex;
+  }
+
+  .menu-drop {
+    position: inherit;
+    /* display: none; */
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: hsl(0, 0%, 98%);
+    padding: 15px 25px;
+    border-radius: 10px;
+    /* left: 198px; */
+    /* top: 80px; */
+    box-shadow: none;
+  }
+
+  .menu-drop1 {
+    position: inherit;
+    /* display: none; */
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: hsl(0, 0%, 98%);
+    padding: 15px 25px;
+    border-radius: 10px;
+    /* left: 390px;
+    top: 80px; */
+    box-shadow: none;
+  }
+
+  #btn-nav {
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0px;
+    margin-right: 14px;
+    margin-top: 20px;
+    /* position: absolute;
+    top: 284px;
+    right: 36px; */
+  }
+
+  .button-login {
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-bottom: 12px;
+    padding: 5px;
+  }
+
+  .button-register {
+    border: 2px solid hsl(0, 0%, 41%);
+    padding: 12px 64px;
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  #btn-nav {
+    display: flex;
+  }
+}
