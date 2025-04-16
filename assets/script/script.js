@@ -1,4 +1,3 @@
-const body = document.querySelector("body");
 const menuDrop = document.getElementById("menu_drop");
 const buttonDrop = document.getElementById("data-dropdown");
 const menuDropOne = document.getElementById("menu_drop1");
@@ -25,12 +24,12 @@ function onMenuDropOne() {
 
 function menuOn() {
   btnImg.src = "./images/icon-close-menu.svg";
-  body.style.background = "hsla(0, 0.00%, 32.50%, 0.45)";
+  navItems.style.boxShadow = "-20px 0px 400px 90px #000";
 }
 
 function menuOff() {
   btnImg.src = "./images/icon-menu.svg";
-  body.style.background = "hsl(0, 0%, 98%)";
+  navItems.style.boxShadow = "none";
 }
 
 function menuOnOffMobile() {
