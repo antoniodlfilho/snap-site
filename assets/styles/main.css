@@ -131,7 +131,9 @@
   .main-imgs {
     display: flex;
     align-items: center;
-    gap: 30px;
-    margin: 0px 10px 0px 10px;
+    gap: 25px;
+    margin: 0px 12px 0px 12px;
+    width: auto;
+    /*justify-content: center;*/
   }
 }
