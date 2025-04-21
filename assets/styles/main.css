@@ -50,7 +50,42 @@
   overflow: hidden;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1440px) {
+  .main {
+    margin-left: 125px;
+    margin-right: 125px;
+  }
+
+  .main-img img {
+    height: 600px;
+    margin-top: 22px;
+  }
+
+  .main h1 {
+    font-size: 66px;
+    line-height: 63px;
+    margin-top: 155px;
+  }
+
+  .main p {
+    color: hsl(0, 0%, 41%);
+    font-weight: 600;
+    margin-top: 35px;
+  }
+
+  .main-btn {
+    margin-bottom: 75px;
+  }
+
+  .main-imgs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 385px;
+  }
+}
+
+@media (max-width: 400px) {
   .main {
     display: flex;
     justify-content: center;

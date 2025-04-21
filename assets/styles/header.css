@@ -135,7 +135,7 @@
 
 .active {
   opacity: 1;
-  visibility: visible; 
+  visibility: visible;
   transition: 0.5s;
 }
 
@@ -148,7 +148,33 @@
   display: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1440px) {
+  .header {
+    margin: 20px 60px 20px 60px;
+  }
+
+  .header-content {
+    gap: 45px;
+  }
+
+  .buttons {
+    margin-left: 524px;
+  }
+
+  .menu-drop {
+    left: 124px;
+    padding: 15px 20px;
+    top: 63px;
+  }
+
+  .menu-drop1 {
+    left: 312px;
+    padding: 15px 20px;
+    top: 63px;
+  } 
+}
+
+@media (max-width: 400px) {
   .header {
     display: flex;
     flex-direction: column;
