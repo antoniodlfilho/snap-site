@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const menuDrop = document.getElementById("menu_drop");
 const buttonDrop = document.getElementById("data-dropdown");
 const menuDropOne = document.getElementById("menu_drop1");
@@ -24,12 +25,12 @@ function onMenuDropOne() {
 
 function menuOn() {
   btnImg.src = "./images/icon-close-menu.svg";
-  navItems.style.boxShadow = "-20px 0px 400px 90px #000";
+  body.style.background = "rgb(0 0 0 / 37%)";
 }
 
 function menuOff() {
   btnImg.src = "./images/icon-menu.svg";
-  navItems.style.boxShadow = "none";
+  body.style.background = "none";
 }
 
 function menuOnOffMobile() {
